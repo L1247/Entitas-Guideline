@@ -9,9 +9,9 @@
 * Group ： 開發者宣告的收集器的種類
 如 _context.GetGroup(GameMatcher.DebugMessage); 、 _context.GetGroup(GameMatcher.AllOf(GameMatcher.DebugMessage , GameMatcher.Character));
 就會產生兩個Group
-* 
+
+# ReactiveSystem<TEntity> 
 ```Csharp
-* ReactiveSystem<TEntity> 
 預設如果只用以下方式，只有在被觀察的Component加入到Entity或者數值改變時會抓到事件。
 protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
 {
