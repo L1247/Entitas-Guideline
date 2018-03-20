@@ -34,4 +34,7 @@ public enum GroupEvent : byte
 ```
 # MultiReactiveSystem 
 [MultiReactiveSystem Tutorial](https://github.com/sschmid/Entitas-CSharp/wiki/MultiReactiveSystem-Tutorial#performing-context-specific-actions-in-multi-reactive-systems)
-
+## 與官網宣告的操作方式不同，估計是新版的做法改變了，Ver. 1.42
+![alt text](https://raw.githubusercontent.com/L1247/Entitas-Guideline/master/Error%20Textures/IviewEntity.png "Logo Title Text 1")
+## 如果遇到以下錯誤，就是找不到對應的isAssignView，因為沒有使用IviewEntity，使用的IViewEntity沒有繼承IAssignViewEntity。
+![alt text](https://raw.githubusercontent.com/L1247/Entitas-Guideline/master/Error%20Textures/IviewEntity.png "Logo Title Text 1")
