@@ -2,7 +2,7 @@
 自己操作Entitas的經驗與心得
 
 # Online Toturials
-[官方Entitas Github]https://github.com/sschmid/Entitas-CSharp
+[官方Entitas Github](https://github.com/sschmid/Entitas-CSharp)
 
 [Entitas CookBook](https://github.com/mzaks/EntitasCookBook)
 
