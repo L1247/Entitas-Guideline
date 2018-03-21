@@ -17,6 +17,10 @@
 # Class Design
 * Component的Class不要使用NameSpace，避免在System使用時的麻煩步驟。
 
+# 經驗
+### Unity Editor Inspector Order.
+![alt text](https://raw.githubusercontent.com/L1247/Entitas-Guideline/master/Experience%20Textures/Component%20Order.png)
+
 # 觀念
 * 預設繼承IComponent的Component是第一個Context，通常預設不改則為GameContext所有。
 
