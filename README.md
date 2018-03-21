@@ -1,10 +1,19 @@
 # Entitas-Guideline
 自己操作Entitas的經驗與心得
 
+# Online Toturials
+[官方Entitas Github]https://github.com/sschmid/Entitas-CSharp
+[Entitas CookBook](https://github.com/mzaks/EntitasCookBook)
+[Cookbook 簡體中文翻譯](http://skyrimwu.cn/)
+[Unity3D ECS框架 Entitas入门学习系列](http://blog.csdn.net/u012632851/article/category/7034956)
+[用Entitas开发游戏的体验是怎么样的？](https://www.zhihu.com/question/64701202)
+[Entitas-Lite](https://github.com/rocwood/Entitas-Lite)
+
 # Class Design
 * Component的Class不要使用NameSpace，避免在System使用時的麻煩步驟。
 
 # 觀念
+* 預設繼承IComponent的Component是第一個Context，通常預設不改則為GameContext所有。
 
 * Group ： 開發者宣告的收集器的種類
 如 _context.GetGroup(GameMatcher.DebugMessage); 、 _context.GetGroup(GameMatcher.AllOf(GameMatcher.DebugMessage , GameMatcher.Character));
