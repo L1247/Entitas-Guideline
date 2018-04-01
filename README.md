@@ -22,6 +22,14 @@
 ![alt text](https://raw.githubusercontent.com/L1247/Entitas-Guideline/master/Experience%20Textures/Component%20Order.png)
 使用
 
+> 使用Event( bool bindToEntity ) 時，設定bindToEntity此數值為True與False有著很大的差別。
+![alt text](https://github.com/L1247/Entitas-Guideline/blob/master/Experience%20Textures/Event(bool%20bindToEntity%20).png?raw=true)
+
+True的情況：會在Entity上做監聽，監聽的是擁有Data Component與Listener的Entity。
+
+False的情況則是只監聽Data Component而已。
+![alt text](https://github.com/L1247/Entitas-Guideline/blob/master/Experience%20Textures/Event(bool%20bindToEntity%20)_Difference.png?raw=true)
+
 # 觀念
 * 預設繼承IComponent的Component是第一個Context，通常預設不改則為GameContext所有。
 
