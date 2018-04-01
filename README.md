@@ -30,6 +30,31 @@ True的情況：會在Entity上做監聽，監聽的是擁有Data Component與Li
 False的情況則是只監聽Data Component而已。
 ![alt text](https://github.com/L1247/Entitas-Guideline/blob/master/Experience%20Textures/Event(bool%20bindToEntity%20)_Difference.png?raw=true)
 
+* 找尋Entity的做法。
+1. 
+```Csharp
+GameObject aa         = new GameObject("aa");
+GameObject bb         = new GameObject("bb");
+var        gameEntity = _gameContext.CreateEntity();
+gameEntity.AddMonster(aa.transform);
+gameEntity.AddDebugMessage("abc");
+aa.Link(gameEntity , _gameContext);
+bb.Link(gameEntity , _gameContext);
+
+aa.GetEntityLink().entity.OnComponentReplaced 
+    += (entity , index , component , newComponent) =>
+       {
+           if (component is DirectionComponent)
+           {
+               var directionComponent = newComponent as DirectionComponent;
+               Debug.Log(directionComponent.value);
+               Debug.Log(newComponent);
+           }
+       };
+Debug.Log(((GameEntity)(aa.GetEntityLink().entity)).debugMessage.message);
+Debug.Log(_gameContext.GetEntityWithMonster(aa.transform).debugMessage.message);
+```
+
 # 觀念
 * 預設繼承IComponent的Component是第一個Context，通常預設不改則為GameContext所有。
 
