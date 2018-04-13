@@ -18,6 +18,8 @@
 * Component的Class盡量不使用NameSpace，避免在System使用時的麻煩步驟。
 
 # 經驗
+### UniRx 
+* 對象如果是Null 在後面加上Observerable，則無反應也不會報錯誤。
 ### Unity Editor Inspector Order.
 ![alt text](https://raw.githubusercontent.com/L1247/Entitas-Guideline/master/Experience%20Textures/Component%20Order.png)
 使用
