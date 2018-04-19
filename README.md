@@ -20,6 +20,7 @@
 # 經驗
 ### UniRx 
 * 對象如果是Null 在後面加上Observerable，則無反應也不會報錯誤。
+### 點擊EntityLink的目標，Inspector不會即時顯示相關的Component，如想看即時的Log比較適合點擊Enity觀看.
 ### Unity Editor Inspector Order.
 ![alt text](https://raw.githubusercontent.com/L1247/Entitas-Guideline/master/Experience%20Textures/Component%20Order.png)
 使用
